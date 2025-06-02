@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:nti_application_2/resources/colors.dart';
 import 'package:nti_application_2/view/widgets/char_widget.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.only(top: 45, right: 12, left: 12),
-        child: CharWidget(),
-      ),
+      backgroundColor: white,
+      body: CharWidget(),
     );
   }
 }
