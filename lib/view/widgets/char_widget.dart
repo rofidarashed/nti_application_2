@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:nti_application_2/components/char_widget_build.dart';
 import 'package:nti_application_2/resources/colors.dart';
 
-// ignore: must_be_immutable
 class CharWidget extends StatefulWidget {
   const CharWidget({super.key});
 
